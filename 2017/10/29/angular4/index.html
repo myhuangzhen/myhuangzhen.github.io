@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>angular项目经验总结三 | 黄镇的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Welcome to [博客] 开始阅读Create a new post1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586">
+<meta property="og:type" content="article">
+<meta property="og:title" content="angular项目经验总结三">
+<meta property="og:url" content="http://yoursite.com/2017/10/29/angular4/index.html">
+<meta property="og:site_name" content="黄镇的博客">
+<meta property="og:description" content="Welcome to [博客] 开始阅读Create a new post1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586">
+<meta property="og:updated_time" content="2017-10-29T06:30:49.114Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="angular项目经验总结三">
+<meta name="twitter:description" content="Welcome to [博客] 开始阅读Create a new post1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586">
+  
+    <link rel="alternate" href="/atom.xml" title="黄镇的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">黄镇的博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-angular4" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/10/29/angular4/" class="article-date">
+  <time datetime="2017-10-29T06:15:34.670Z" itemprop="datePublished">2017-10-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      angular项目经验总结三
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to [博客]</p>
+<h2 id="开始阅读"><a href="#开始阅读" class="headerlink" title="开始阅读"></a>开始阅读</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div></pre></td><td class="code"><pre><div class="line">angular请求数据的方式；</div><div class="line">&lt;script src=<span class="string">"node_modules/angular-sanitize.min.js"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;!-- 请求数据需要引入文件sanitize--&gt;</div><div class="line">&lt;script&gt;</div><div class="line">   angular.module(<span class="string">'myApp'</span>,[<span class="string">'ngSanitize'</span>])  // 方括号里写引入的依赖；</div><div class="line">      .controller(<span class="string">'demoCtrl'</span>,[<span class="string">'$scope'</span>,<span class="string">'$http'</span>,<span class="keyword">function</span>(<span class="variable">$scope</span>,<span class="variable">$http</span>)&#123;</div><div class="line">            $.ajax(&#123;</div><div class="line">               url:<span class="string">''</span>, </div><div class="line">               <span class="built_in">type</span>:<span class="string">''</span>, </div><div class="line">               data:&#123;&#125;, </div><div class="line">               beforeSend:<span class="function"><span class="title">function</span></span>()&#123;&#125;, // <span class="variable">$http</span>中没有</div><div class="line">               async:<span class="literal">true</span>, // <span class="variable">$http</span>中没有同步 只有异步</div><div class="line">               success:<span class="keyword">function</span>(res)&#123;&#125;</div><div class="line">            &#125;)</div><div class="line">         <span class="variable">$http</span>(&#123;  //与$.ajax请求类似；</div><div class="line">            url:<span class="string">'./test.json'</span>, // 请求地址</div><div class="line">            method:<span class="string">'post'</span>, // 请求方式 </div><div class="line">            params:&#123; // get传参  不同的传参方式</div><div class="line">               a:1, </div><div class="line">                            b:2</div><div class="line">            &#125;,</div><div class="line">            data:&#123; // post传参</div><div class="line">               c:3,</div><div class="line">                           d:4 </div><div class="line">            &#125;</div><div class="line">         &#125;).<span class="keyword">then</span>(<span class="keyword">function</span>(res)&#123;              // 成功回调用</div><div class="line">            console.log(res.data);</div><div class="line">         &#125;,<span class="function"><span class="title">function</span></span>()&#123;              // 失败回调 </div><div class="line">         &#125;)</div><div class="line">         <span class="variable">$http</span>.get(<span class="string">'./test.json'</span>,&#123; params:&#123; a:1,b:2 &#125; &#125;).<span class="keyword">then</span>(<span class="keyword">function</span>(res)&#123;</div><div class="line">            console.log(res) //  get请求text.json 成功时的函数；res是text.json的数据；</div><div class="line">         &#125;);</div><div class="line">         <span class="variable">$http</span>.post(<span class="string">'./test.json'</span>,&#123;c:3,d:4&#125;).<span class="keyword">then</span>(<span class="keyword">function</span>(res)&#123;</div><div class="line">            console.log(res)//  post请求text.json 成功时的函数；res是text.json的数据；</div><div class="line">         &#125;);</div><div class="line">         <span class="variable">$http</span>.get(<span class="string">'./test.json'</span>).<span class="keyword">then</span>(<span class="keyword">function</span>(res)&#123;</div><div class="line">      console.log(res.data); //  get请求text.json 成功时的函数；res是text.json的数据；</div><div class="line">            <span class="variable">$scope</span>.result = res.data; // 将请求成功的数据应用于页面；</div><div class="line">         &#125;);</div><div class="line">      &#125;])</div><div class="line">&lt;/script&gt;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">angular将原生js对象转化成jQ对象：</div><div class="line">angular.module(<span class="string">'myApp'</span>,[])</div><div class="line">   .controller(<span class="string">'demoCtrl'</span>,[<span class="string">'$scope'</span>,<span class="keyword">function</span>(<span class="variable">$scope</span>)&#123;</div><div class="line">      // angularjs给我们提供了一个jquery的精简版叫做 jqLite</div><div class="line">      // 目的是为了方便DOM操作</div><div class="line">      // $(原生JS对象) 将原生JS对象转换为JQ对象</div><div class="line">      // angular.element(原生JS对象) 将原生JS对象转换成jqLite对象</div><div class="line">      angular.element(document.getElementById(<span class="string">'box'</span>)).css(&#123;</div><div class="line">         width:<span class="string">'500px'</span>,</div><div class="line">         height:<span class="string">'200px'</span>,</div><div class="line">         background:<span class="string">'skyblue'</span>,</div><div class="line">         color:<span class="string">'#FFF'</span></div><div class="line">      &#125;);</div><div class="line">      console.log(angular.element(document.getElementById(<span class="string">'box'</span>)))</div><div class="line">                    //  将原生JS对象转换为JQ对象</div><div class="line">   &#125;])</div><div class="line"></div><div class="line"><span class="variable">$watch</span> :  // 用来监控一个数据的实时变化 只要数据发生变化 就会执行回调函数</div><div class="line"><span class="variable">$scope</span>.val = <span class="string">"初始值"</span>;</div><div class="line">   // 用来监控一个数据的实时变化 只要数据发生变化 就会执行回调函数</div><div class="line">   // newValue 当前用户输入的最新值</div><div class="line">   // oldValue 用户上一次输入的值</div><div class="line">   // 页面一上来会默认执行一次</div><div class="line">   <span class="variable">$scope</span>.<span class="variable">$watch</span>(<span class="string">"val"</span>,<span class="keyword">function</span>(newValue,oldValue)&#123;</div><div class="line">      <span class="keyword">if</span>(newValue.length &gt; 10)&#123;</div><div class="line">         <span class="variable">$scope</span>.tips = <span class="string">"大于10"</span>;</div><div class="line">      &#125;</div><div class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(newValue.length == 10)&#123; // 数值相等用双等号；</div><div class="line">         <span class="variable">$scope</span>.tips = <span class="string">"等于10"</span>;</div><div class="line">      &#125;</div><div class="line">      <span class="keyword">else</span>&#123;</div><div class="line">         <span class="variable">$scope</span>.tips = <span class="string">"小于10"</span>;</div><div class="line">      &#125;</div><div class="line">   &#125;)</div><div class="line">&#125;])</div><div class="line"></div><div class="line"></div><div class="line"> <span class="variable">$scope</span>.<span class="variable">$apply</span>();   // 通知angularjs 说 js中的数据变了 你帮我更新一下HTML页面吧</div><div class="line">window.changeValue = <span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">   <span class="variable">$scope</span>.val = <span class="string">"456"</span>;</div><div class="line">   // 通知angularjs 说 js中的数据变了 你帮我更新一下HTML页面吧</div><div class="line">   <span class="variable">$scope</span>.<span class="variable">$apply</span>();</div><div class="line">   // alert(<span class="variable">$scope</span>.val);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/10/29/angular4/" data-id="cj9ciivl8000148wybzjmtn74" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/10/29/angular3/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          angular项目经验三
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/10/29/hehe/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">angular项目经验二</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/10/29/angular3/">angular项目经验三</a>
+          </li>
+        
+          <li>
+            <a href="/2017/10/29/angular4/">angular项目经验总结三</a>
+          </li>
+        
+          <li>
+            <a href="/2017/10/29/hehe/">angular项目经验二</a>
+          </li>
+        
+          <li>
+            <a href="/2017/10/29/text/">angular项目经验一</a>
+          </li>
+        
+          <li>
+            <a href="/2017/10/28/hello-world/">黄镇的博客</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
